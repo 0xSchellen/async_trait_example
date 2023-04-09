@@ -1,0 +1,12 @@
+[package]
+name = "async_trait_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.27.0", features = ["full"] }
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+regex = "1"
+lazy_static = "1.4"
+primitive-types = { version = "0.12.1", features = ["impl-serde"], default-features = false }
